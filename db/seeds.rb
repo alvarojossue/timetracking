@@ -1,19 +1,13 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+project_1 = Project.create(name: 'Cultura Dev', description: 'Blog about my journey into coding')
+project_2 = Project.create(name: 'Hattrick', description: 'Final project at Ironhack')
+project_3 = Project.create(name: 'El Nene', description: 'Scion FR-S modification')
+project_4 = Project.create(name: 'Ectomorfosis', description: 'Blog about fitness')
+project_5 = Project.create(name: 'Apartamento 7', description: 'Live streaming show')
+project_6 = Project.create(name: 'Camaleon Arte Visual', description: 'Photography studio in Nicaragua')
+project_7 = Project.create(name: 'Caprina', description: 'Gourmet cheese store in Nicaragua')
+project_8 = Project.create(name: 'Cultura Beta', description: 'Blog about tech and games')
+project_9 = Project.create(name: 'Chacuatol', description: 'Web application for Nicaraguan slang')
+project_10 = Project.create(name: 'Latino Aventurero', description: 'Youtube channel about my journey in the U.S')
 
-
-Project.create(name: 'Cultura Dev', description: 'Blog about my journey into coding')
-Project.create(name: 'Hattrick', description: 'Final project at Ironhack')
-Project.create(name: 'El Nene', description: 'Scion FR-S modification')
-Project.create(name: 'Ectomorfosis', description: 'Blog about fitness')
-Project.create(name: 'Apartamento 7', description: 'Live streaming show')
-Project.create(name: 'Camaleon Arte Visual', description: 'Photography studio in Nicaragua')
-Project.create(name: 'Caprina', description: 'Gourmet cheese store in Nicaragua')
-Project.create(name: 'Cultura Beta', description: 'Blog about tech and games')
-Project.create(name: 'Chacuatol', description: 'Web application for Nicaraguan slang')
-Project.create(name: 'Latino Aventurero', description: 'Youtube channel about my journey in the U.S')
+project_1.time_entries.create(hours: 0, minutes: 45, comment: "Designed the logo", date: Time.now)
+project_1.time_entries.create(hours: 1, minutes: 1, comment: "Developed slogan", date: Time.now - 5.hours)
