@@ -6,6 +6,8 @@
 			<%= entry.minutes %> m -
 			<%= entry.date %> 
 			<%= entry.comment %>
+			<%= link_to "Edit Entry", "/projects/#{@my_project.id}/time_entries/#{entry.id}/edit" %>
 		</li>
 	<% end %>
+
 </ul>
